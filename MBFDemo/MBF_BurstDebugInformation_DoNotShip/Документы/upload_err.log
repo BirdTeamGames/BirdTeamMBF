@@ -1,0 +1,41 @@
+upload_crash release upload:1752853
+__main__ Exception('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 670, in urlopen
+  File "urllib3\connectionpool.py", line 426, in _make_request
+  File "<string>", line 3, in raise_from
+  File "urllib3\connectionpool.py", line 421, in _make_request
+  File "http\client.py", line 1347, in getresponse
+  File "http\client.py", line 307, in begin
+  File "http\client.py", line 268, in _read_status
+  File "socket.py", line 669, in readinto
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 439, in send
+  File "urllib3\connectionpool.py", line 726, in urlopen
+  File "urllib3\util\retry.py", line 410, in increment
+  File "urllib3\packages\six.py", line 734, in reraise
+  File "urllib3\connectionpool.py", line 670, in urlopen
+  File "urllib3\connectionpool.py", line 426, in _make_request
+  File "<string>", line 3, in raise_from
+  File "urllib3\connectionpool.py", line 421, in _make_request
+  File "http\client.py", line 1347, in getresponse
+  File "http\client.py", line 307, in begin
+  File "http\client.py", line 268, in _read_status
+  File "socket.py", line 669, in readinto
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "upload_crash_os.py", line 94, in <module>
+  File "upload_crash_os.py", line 82, in upload_crash
+  File "requests\api.py", line 119, in post
+  File "requests\api.py", line 61, in request
+  File "requests\sessions.py", line 530, in request
+  File "requests\sessions.py", line 643, in send
+  File "requests\adapters.py", line 498, in send
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+

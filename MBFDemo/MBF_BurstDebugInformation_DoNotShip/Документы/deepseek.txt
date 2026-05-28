@@ -1,0 +1,5 @@
+# Разрешаем ICMPv6 входящий (всё, что нужно для нормальной работы IPv6)
+New-NetFirewallRule -DisplayName "Allow ICMPv6 RA/RS/ND" -Protocol ICMPv6 -IcmpType 133,134,135,136 -Direction Inbound -Action Allow -Profile Any
+
+# Пинги по IPv6 (не обязательно, но удобно)
+New-NetFirewallRule -DisplayName "Allow ICMPv6 Echo Request" -Protocol ICMPv6 -IcmpType 128 -Direction Inbound -Action Allow -Profile Any

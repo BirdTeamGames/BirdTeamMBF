@@ -1,0 +1,5 @@
+2025-06-26 17:20:41 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2025-06-26 17:23:14 *CRITICAL*   Injection initiated. Mode: 0, process type: 1, pid: 0, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2025-06-26 17:23:14 *NORMAL*     Creating new process 'D:\Programs\HoYoPlay\games\Genshin Impact game\GenshinImpact.exe' with arguments ''
+2025-06-26 17:23:14 *CRITICAL*   Injecting image 'C:\Users\Intel\OneDrive\Desktop\launcher.exe'
+
